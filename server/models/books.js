@@ -1,3 +1,4 @@
+// Harnoor Kaur(301175311)--------COMP229
 let mongoose = require('mongoose');
 
 // create a model class
