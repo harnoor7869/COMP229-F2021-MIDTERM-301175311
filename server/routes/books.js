@@ -44,11 +44,10 @@ router.get('/add', (req, res, next) => {
 // POST process the Book Details page and create a new Book - CREATE
 router.post('/add', (req, res, next) => {
     const new_book = new book({
-        Title: req.body.title_txt,
-        
-        Price: req.body.price_txt,
-        Author: req.body.auther_txt,
-        Genre: req.body.genre_txt
+        Title: req.body.Title,
+        Price: req.body.Price,
+        Author: req.body.Author,
+        Genre: req.body.Genre
     });
     new_book.save().then(() => console.log('book saved !'));
     book.find((err, books) => {
